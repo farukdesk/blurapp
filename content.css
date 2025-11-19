@@ -1,0 +1,36 @@
+/* Blur App - Content Script Styles */
+
+@keyframes blur-app-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes blur-app-fade-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.blur-app-overlay {
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.blur-app-selection-box {
+  box-sizing: border-box;
+}
+
+.blur-app-notification {
+  animation: blur-app-fade-in 0.3s ease;
+}

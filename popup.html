@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blur App</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Blur App</h1>
+      <p class="subtitle">Blur specific areas on any website</p>
+    </div>
+    
+    <div class="controls">
+      <button id="toggleBlur" class="btn btn-primary">
+        <span id="toggleIcon">🎯</span>
+        <span id="toggleText">Enable Selection Mode</span>
+      </button>
+      
+      <button id="clearBlurs" class="btn btn-secondary">
+        <span>🗑️</span>
+        Clear All Blurs
+      </button>
+    </div>
+    
+    <div class="info">
+      <div class="info-item">
+        <strong>How to use:</strong>
+        <ol>
+          <li>Click "Enable Selection Mode"</li>
+          <li>Click and drag on the page to select areas to blur</li>
+          <li>Blur regions persist across page reloads and scrolling</li>
+          <li>Right-click on a blur region to remove it</li>
+        </ol>
+      </div>
+      
+      <div class="stats">
+        <p>Active blur regions: <strong id="blurCount">0</strong></p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
